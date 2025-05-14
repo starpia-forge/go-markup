@@ -5,22 +5,11 @@
 
 `go-markup`은 HTML과 유사한 마크업 문자열을 트리 구조의 노드로 파싱하는 경량 Go 라이브러리입니다. 간편하게 커스텀 마크업을 처리하고 Go 프로젝트에 쉽게 통합할 수 있도록 설계되었습니다.
 
----
-
 ## Features
 - Parses HTML-like markup to a node tree
 - Supports tag attributes and nested elements
 - Extracts both element text and child nodes
 - Simple, dependency-free implementation
-
----
-
-- HTML과 비슷한 마크업을 노드 트리로 변환
-- 태그의 속성과 중첩된 요소 지원
-- 요소의 텍스트와 자식 노드를 모두 추출
-- 의존성 없는 간단한 구현
-
----
 
 ## How to Build
 1. Make sure you have Go 1.24 or higher installed.
@@ -31,19 +20,8 @@
    ```
 3. Build the library or use it as a module in your Go project.
 
----
 
-1. Go 1.24 이상이 설치되어 있는지 확인하세요.
-2. 저장소를 클론합니다:
-   ```sh
-   git clone https://github.com/starpia-forge/gomarkup.git
-   cd gomarkup
-   ```
-3. 라이브러리를 직접 빌드하거나 Go 프로젝트의 모듈로 활용하세요.
-
----
-
-### How to Use
+## How to Use
 
 ```shell
 go get -u github.com/starpia-forge/go-markup
@@ -85,21 +63,10 @@ func printTree(n *gomarkup.Node, depth int) {
 }
 ```
 
-
----
-
 ## Cautions
 - This library is intended for simple, trusted markup and is **not** a full HTML parser.
 - It does not handle malformed or complex HTML, scripts, or styles.
 - Use with untrusted or complicated markup is not recommended.
-
----
-
-- 이 라이브러리는 단순하고 신뢰할 수 있는 마크업을 위한 것으로, **완전한 HTML 파서가 아닙니다**.
-- 잘못된 형식의 HTML, 복잡한 구조, 스크립트, 스타일 등은 처리하지 않습니다.
-- 신뢰할 수 없거나 복잡한 마크업에는 사용을 권장하지 않습니다.
-
----
 
 ## License
 MIT License
